@@ -51,10 +51,10 @@ public class Rational
     //      simplify(1/2) => 1/2
     public static Rational simplify(Rational r)
     {
-        int sgcd = greatestCommonFactor(r.numerator, r.denominator);
+        int gcf = greatestCommonFactor(r.numerator, r.denominator);
 
-        int newNumerator = r.numerator/sgcd;
-        int newDenominator = r.denominator/sgcd;
+        int newNumerator = r.numerator/gcf;
+        int newDenominator = r.denominator/gcf;
 
         Rational x = new Rational(newNumerator, newDenominator);
         return x;
