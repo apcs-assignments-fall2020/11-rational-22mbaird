@@ -90,6 +90,10 @@ public class Rational
         x = simplify(x);
         return x;
     }
+    
+    
+           
+    
 
 
 
